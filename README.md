@@ -16,3 +16,4 @@ The project requires the implementation of functions to:
 2. Clean invalid points from a path,
 3. Convert a path into a string by extracting characters from a given matrix.
 
+In the main function, the string str must be printed, and with the provided values the output will be BRAVO.
