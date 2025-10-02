@@ -34,7 +34,7 @@
  Stringa str;
 
  Nel file
- https://www.dropbox.com/s/np3h592pn1ng8no/testo.c?dl=0
+ https://www.dropbox.com/...
 
  trovate (nel main) la definizione ed inizializzazione di un percorso: per1 e lung1, nonchè la definizione di un secondo percorso per2 e lung2. Si noti che per2 non è inizializzata e quindi lung2 viene coerentemente inizializzata a 0. Nel file viene anche dichiarata ed inizializzata una matrice mat di caratteri 8x8 e dichiarata una stringa str non inizializzata.
  Si noti anche che il percorso non è valido rispetto alla matrice perché contiene due punti con coordinate negative e un punto con riga=8 (che non esiste).
