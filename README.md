@@ -11,7 +11,7 @@ Indices start from 0.
 The path is represented using the following structure:
 `typedef struct {int x, y;} Punto;`
 
-The project requires the implementation of functions to:
+The exercise requires the implementation of functions to:
 1. Print a path,
 2. Clean invalid points from a path,
 3. Convert a path into a string by extracting characters from a given matrix.
