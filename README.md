@@ -95,3 +95,52 @@ Il percorso in T1 con media di valori minima ha media: 6.333333
 Il percorso in T2 con media di valori minima ha media: 6.500000
 Il percorso in T3 con media di valori minima ha media: 3.000000
 ```
+
+
+## Oral exam 
+To pass the exam, a real-time coding oral session with the professor was also required, and below is the code that was requested and implemented.
+
+### Personal Finance Records (Lists)
+
+During this exercise, a data structure is defined to manage a person’s **income** and **expenses**.  
+Each record (transaction) contains:
+
+- **Date**
+- **Description** (causale)
+- **Amount**
+
+A linked list is used to store all entries (both incomes and expenses) in chronological order.
+
+The structures are represented as follows:
+```c
+typedef struct {
+    int num;         // day number
+    char mese[50];   // month name or code
+    int anno;        // year
+} Data;
+
+typedef struct dati {
+    Data giorno;           // date of the transaction
+    char descrizione[50];  // description (causale)
+    int ammontare;         // amount (positive or negative)
+    struct dati *next;     // next element
+} Spesa;
+
+typedef Spesa *bilancio;   // list head
+```
+
+The exercise requires the implementation of functions to:
+
+- **Find** all entries whose `descrizione` **exactly matches** a given string and return them as a **new list**,  
+- **Delete** (in-place) all entries whose `descrizione` **starts with** a given prefix string.
+
+The functions to be implemented are:
+```c
+bilancio Trova(bilancio a, char causale[]);
+void Elimina(bilancio a, char causale[]);
+```
+
+Notes:
+- `Trova` must **traverse** the input list and **append** matching nodes (or copies of them) to a new list, then **return** the head of that new list.
+- `Elimina` must **remove from the original list** all nodes whose description **begins with** the specified prefix, properly updating links and freeing memory.
+
